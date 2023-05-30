@@ -146,7 +146,7 @@
 
 <p>最终效果是这样的</p>
 <p><img src="https://blueberrycat.site/assets/res/blog/live.jpg" alt="直播效果图"></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-05-27T08:37:58.000Z" title="2023/5/27 16:37:58">2023-05-27</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-05-30T12:44:09.577Z" title="2023/5/30 20:44:09">2023-05-30</time></span><span class="level-item"><a class="link-muted" href="https://blueberrycat123.github.io/categories/Codes/">Codes</a></span><span class="level-item">8 minutes read (About 1175 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="https://blueberrycat123.github.io/2023/05/27/Matlab%E5%8F%B2%E5%AF%86%E6%96%AF%E5%9C%86%E5%9B%BE%E4%B8%8ELNA%E8%AE%BE%E8%AE%A1/">Matlab史密斯圆图与LNA设计</a></p><div class="content"><p>这几天需要用<code>Matlab</code>设计一个<code>LNA</code>，结果发现<code>Matlab</code>的<code>史密斯圆图</code>不太好用…</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-05-27T08:37:58.000Z" title="2023/5/27 16:37:58">2023-05-27</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-05-30T12:53:05.501Z" title="2023/5/30 20:53:05">2023-05-30</time></span><span class="level-item"><a class="link-muted" href="https://blueberrycat123.github.io/categories/Codes/">Codes</a></span><span class="level-item">8 minutes read (About 1175 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="https://blueberrycat123.github.io/2023/05/27/Matlab%E5%8F%B2%E5%AF%86%E6%96%AF%E5%9C%86%E5%9B%BE%E4%B8%8ELNA%E8%AE%BE%E8%AE%A1/">Matlab史密斯圆图与LNA设计</a></p><div class="content"><p>这几天需要用<code>Matlab</code>设计一个<code>LNA</code>，结果发现<code>Matlab</code>的<code>史密斯圆图</code>不太好用…</p>
 <p>于是我决定自己整一个<code>史密斯圆图</code>。</p>
 <hr>
 <p><code>电阻圆族</code>和<code>电抗圆族</code>公式如下：</p>
@@ -169,7 +169,7 @@
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[ang]</span> = <span class="title">getAngle</span><span class="params">(z)</span></span></span><br><span class="line">    ang = <span class="built_in">angle</span>(z) / <span class="number">2</span> / <span class="built_in">pi</span> * <span class="number">360</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
 
 <p>运行结果如下：</p>
-<p><img src="https://blueberrycat.site/assets/res/blog/result.jpg" alt="计算结果"></p>
+<p><img src="https://blueberrycat.site/assets/res/blog/result.png" alt="计算结果"></p>
 <p>左图中红圈就是对于$\Gamma_{S}$的<code>等增益圆</code>，绿圈则是<code>等噪声圆</code>。</p>
 <p>绿圈中的红点是$\Gamma_{opt}$。</p>
 <p>左图下方一大片黄点是满足参数要求（<code>增益</code>、<code>噪声</code>）的点，红色的则是<code>噪声系数</code>最小的点。</p>
